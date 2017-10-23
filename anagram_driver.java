@@ -6,7 +6,7 @@ public class anagram_driver {
 	public static void main(String[] args) throws Exception{
 
 		BSTNode anag=null; //creating a bst
-    String fileName = "dict2";
+    String fileName = "dict1";
     FileReader fileReader =
         new FileReader(fileName);
 
@@ -29,14 +29,14 @@ public class anagram_driver {
 		}
 
 		FileWriter fileWriter =
-							 new FileWriter("anagram2");
+							 new FileWriter("anagram1");
 
 					 // Always wrap FileWriter in BufferedWriter.
 					 BufferedWriter bufferedWriter =
 							 new BufferedWriter(fileWriter);
 
     helpWrite(anag,bufferedWriter);
-        System.out.println(size(anag));
+      
 		bufferedWriter.close();
 	}
 
